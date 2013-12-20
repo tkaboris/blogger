@@ -1,0 +1,10 @@
+All artilces</br>
+
+<% @articles.each do |article| %>
+    
+
+      <%= link_to article.title, article_path(article), class: 'article_title' %>
+      <%= link_to "Create a New Article", new_article_path, class: "new_article" %>
+    
+
+  <% end %>
