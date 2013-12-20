@@ -1,0 +1,25 @@
+Post a Comment
+<%= form_for [ @article, @comment ] do |f| %>
+  
+
+    <%= f.label :author_name, "Your Name" %>
+
+    <%= f.text_field :author_name %>
+  
+
+
+  
+
+    <%= f.label :body, "your comments" %>
+
+    <%= f.text_area :body %>
+  
+
+
+  
+
+    <%= f.submit 'Submit' %>
+  
+
+
+<% end %>
