@@ -4,8 +4,12 @@ Tags:
     <%= link_to tag.name, tag_path(tag) %>
   <% end %>
 
-
-
+ 
+    
+    
+  <% if @article.image.exists? %>
+        <%= image_tag @article.image.url %><br/>
+    <% end %>
 <%= @article.body %></br>
 
 
